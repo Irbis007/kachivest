@@ -17,6 +17,10 @@
 @import url('./footer.css');
 
 
+html{
+	scroll-behavior: smooth;
+}
+
 .container{
 	max-width: 980px;
 	width: 100%;
