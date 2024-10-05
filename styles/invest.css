@@ -1,0 +1,147 @@
+
+
+.invest{
+	margin-top: 20px;
+}
+
+.invest__body{
+	display: flex;
+	align-items: center;
+	margin-top: 9px;
+	padding: 12px 58px 24px 0;
+	background-color: #212B36;
+	border-radius: 8px;
+}
+
+.invest__img-1{
+	max-width: 415px;
+	width: 100%;
+}
+
+.invest__img-2{
+	max-width: 500px;
+	width: 100%;
+}
+
+:is(.invest__img-1, .invest__img-2) img{
+	width: 100%;
+}
+
+.invest__countries{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 0 auto;
+	margin-top: 11px;
+}
+
+.invest__country{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 9px;
+
+	width: 149px;
+	height: 149px;
+
+	border-radius: 8px;
+
+	font-family: 'ADLaM Display', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.invest__country:nth-child(1){
+	background-color: #BC002D;
+}
+
+.invest__country:nth-child(2){
+	background-color: #B31942;
+}
+
+.invest__country:nth-child(3){
+	background-color: #012169;
+}
+
+.invest__country:nth-child(4){
+	background-color: #03723A;
+}
+
+.invest__country:nth-child(5){
+	background-color: #06266C;
+}
+
+.invest__country:nth-child(6){
+	background-color: #DD0000;
+}
+
+.invest__open-account{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	margin-top: 28px;
+	padding: 16px 25px;
+	background-color: #DB3628;
+
+	border-radius: 8px;
+
+	font-family: 'ADLaM Display', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+.invest__open-account h5{
+	font-size: 16px;
+	opacity: .5;
+}
+
+@media (max-width: 950px) {
+	.invest__countries{
+		padding: 0 10px;
+	}
+	.invest__country{
+		width: 240px;
+	}
+}
+
+@media (max-width: 767px) {
+	.invest__title {
+		text-align: center;
+	}
+	.invest__body{
+		padding: 13px 20px;
+		border-radius: 0;
+	}
+	.invest__img-1{
+		display: none;
+	}
+	.invest__img-2{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.invest__countries{
+		padding: 0 30px;
+	}
+	.invest__country{
+		width: calc(50% - 5px);
+	}
+	.invest__open-account{
+		margin: 34px 17px 0 17px;
+		justify-content: center;
+		width: calc(100% - 34px);
+	}
+	.invest__open-account h5{
+		display: none;
+	}
+}
+
+@media (max-width: 360px) {
+	.invest__countries{
+		padding: 0 10px;
+	}
+}

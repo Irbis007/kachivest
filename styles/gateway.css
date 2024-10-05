@@ -1,0 +1,150 @@
+.gateway{
+	margin-top: 23px;
+}
+
+.gateway__title{
+	font-size: 24px;
+}
+
+.gateway__body{
+	display: grid;
+	grid-template-columns: 207px auto;
+	grid-template-rows: auto auto;
+	width: 100%;
+	max-height: 258px;
+	margin-top: 11px;
+	background: url('../images/gateway.jpg') center center / cover no-repeat;
+
+	border-radius: 8px;
+
+	font-family: 'ADLaM Display', sans-serif;
+	color: #fff;
+	overflow: hidden;
+}
+
+
+.gateway__body-title{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	font-size: 48px;
+	margin: 44px 0 0 120px;
+}
+
+.gateway__body-descr{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	max-width: 330px;
+	margin: 20px 0 0 120px;
+	font-size: 24px;
+}
+
+.gateway__scrolling-wrapper{
+	grid-column: 1/2;
+	grid-row: 1/4;
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+	line-height: 26px;
+	overflow: hidden;
+}
+
+.gateway__scrolling{
+	animation: scroll 10s linear infinite;
+}
+
+
+.gateway__table-wrapper{
+	margin-top: 22px;
+	overflow-x: auto;
+}
+
+.gateway__table{
+	font-family: 'ADLaM Display';
+}
+
+.gateway__table :is(th, td:not(:first-child)){
+	text-align: center;
+} 
+
+.gateway__table tr{
+	border-bottom: 1px solid #DCDCDD;
+} 
+
+
+.gateway__table th{
+	padding: 12px 0;
+	font-size: 18px;
+}
+
+.gateway__table th:nth-child(2){
+	color: #B1101F;
+}
+
+.gateway__table td{
+	padding: 8px 16px;
+  vertical-align: middle;
+	width: 230px;
+	font-size: 14px;
+}
+
+.gateway__table td:first-child{
+	font-size: 16px;
+}
+
+
+
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-50%);
+	}
+}
+
+@media (max-width: 995px) {
+	.gateway__table{
+		margin: 0 15px;
+		width: 980px;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.gateway__body-title{
+		margin: 44px 0 0 100px;
+	}
+	
+	.gateway__body-descr{
+		margin: 20px 0 0 100px;
+	}	
+}
+
+@media (max-width: 767px) {
+	.gateway__title{
+		text-align: center;
+	}
+	.gateway__body{
+		grid-template-columns: auto;
+		background-position: center right;
+		max-height: unset;
+		border-radius: 0;
+		padding: 44px 0 81px;
+	}
+	.gateway__body-title{
+		margin: 44px 0 0 33px;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	
+	.gateway__body-descr{
+		margin: 20px 0 0 33px;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}	
+
+	.gateway__scrolling{
+		display: none;
+	}
+}

@@ -1,0 +1,19 @@
+
+
+.footer{
+	margin-top: 96px;
+	padding: 37px 50px;
+	background-color: #F1F2F2;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #727579;
+	line-height: 19px;
+}
+
+@media (max-width: 767px) {
+	.footer{
+		padding: 21px 39px;
+		margin-top: 51px;
+	}
+}

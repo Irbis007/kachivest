@@ -1,0 +1,119 @@
+.header{
+	position: relative;
+	padding: 68px 15px 49px;
+}
+
+.header .container{
+	display: flex;
+	align-items: center;
+}
+
+.header__logo{
+	flex: 1 0 auto;
+}
+
+.logo__link{
+	width: 100%;
+}
+
+.header__nav .list{
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header__nav .link{
+	text-decoration: none;
+
+	font-family: 'ADLaM Display', sans-serif;
+	font-size: 14px;
+	color: #000;
+
+	transition: opacity .1s;
+}
+
+.header__nav .link:hover{
+	opacity: .7;
+}
+
+.header__hamburger{
+	position: absolute;
+	right: 16px;
+	z-index: 10000;
+	display: none;
+
+	flex-direction: column;
+	gap: 5px;
+
+	cursor: pointer;
+}
+
+.hamburger__line{
+	flex-shrink: 0;
+	width: 44px;
+	height: 6px;
+
+	background-color: #000;
+
+	border-radius: 2px;
+
+	transition: transform, width, top, .3s;
+}
+
+.header__hamburger.active > div:nth-child(1){
+	position: relative;
+	top: 11px;
+	transform: rotate(135deg);
+}
+.header__hamburger.active > div:nth-child(2){
+	width: 0;
+	margin-left: auto;
+}
+.header__hamburger.active > div:nth-child(3){
+	position: relative;
+	top: -11px;
+	transform: rotate(-135deg);
+}
+
+@media (max-width: 767px) {
+
+	.header{
+		padding: 38px 15px 43px;
+	}
+
+	.header__nav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0px;
+		min-height: 100vh;
+		overflow: hidden;
+
+		background-color: #fff;
+		box-shadow: 0 0 15px #cdcdcd;
+		z-index: 1000;
+
+		transition: width .4s;
+	}
+
+	.header__nav.active{
+		width: 280px;
+	}
+
+
+	.header__nav .list{
+		width: 280px;
+		flex-direction: column;
+		align-items: end;
+
+		padding: 100px 20px 0;
+	}
+
+	.header__nav .link{
+		font-size: 18px;
+	}
+
+	.header__hamburger{
+		display: flex;
+	}
+}

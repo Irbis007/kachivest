@@ -1,0 +1,64 @@
+
+.markets{
+	margin-top: 24px;
+}
+
+.markets__wrapper{
+	display: flex;
+	margin-top: 6px;
+}
+
+.markets__body{
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.markets__body img{
+	max-width: 513px;
+	width: 100%;
+}
+
+.markets__sub{
+	display: flex;
+}
+
+.markets__sub-list{
+	display: flex;
+	flex-direction: column;
+	gap: 68px;
+	max-width: 210px;
+	margin-top: 10px;
+}
+
+.markets__sub-item{
+	font-family: 'Roboto', sans-serif;
+}
+
+.markets__sub-title{
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.markets__title{
+		text-align: center;
+	}
+	.markets__wrapper{
+		justify-content: center;
+	}
+	.markets__body{
+		display: none;
+	}
+	.markets__sub-list{
+		margin-top: 12px;
+		max-width: 144px;
+	}
+	
+	.markets__sub-title{
+		font-size: 14px;
+	}
+	.markets__sub-descr{
+		font-size: 13px;
+		margin-top: 3px;
+	}
+}

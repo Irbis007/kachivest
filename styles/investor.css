@@ -1,0 +1,34 @@
+
+
+.investor{
+	margin-top: 24px;
+}
+
+.investor__list-wrapper{
+	width: 100%;
+	overflow-x: auto;
+}
+
+.investor__list{
+	display: flex;
+	justify-content: space-between;
+	width: 980px;
+	margin-top: 16px;
+}
+
+.investor__item{
+	width: 235px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 19px;
+}
+
+.investor__item-title{
+	font-weight: 700;
+}
+
+@media (max-width: 980px) {
+	.investor__list{
+		margin: 0 15px;
+		margin-top: 16px;
+	}
+}
